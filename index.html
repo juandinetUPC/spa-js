@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA-js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div>
+       <div class="formulario">
+           <h1>AGENDA</h1>
+           <form>
+            <label for="nombre">Nombres</label>
+            <input type="text"id="nombre"name="nombre">
+            <br>
+            <label for="apellido">Apellidos</label>
+            <input type="text"id="apellido"name="apellido">
+            <br>
+            <label for="telefono">Celular</label>
+            <input type="tel"id="telefono"name="telefono">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="direccion">Dirección</label>
+            <input type="text"id="direccion"name="direccion">
+            <br>
+            <label for="fecha">Cumpleaños</label>
+            <input type="date"id="fecha"name="fecha">
+            <br>
+            <label for="nota">Anotación</label>
+            <input type="text"id="nota"name="nota">
+            <br>
+            <input type="button" value="Agregar" id="guardar">
+
+           </form>
+       </div>
+   </div>
+   <br>
+<div>
+    <div class="tabla">
+        <table id="tabla">
+            <thead>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Celular</th>
+            <th>Email</th>
+            <th>Dirección</th>
+            <th>Cumpleaños</th>
+            <th>Nota</th>
+            <th>Acción</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pedro</td>
+                <td>Perez</td>
+                <td>3112402345</td>
+                <td>pedroperez@gmail.com</td>
+                <td>cll21 nu 3-45</td>
+                <td>12/12/2001</td>
+                <td>Compañero del colegio</td>
+                <td> <button class="btn-danger" onclick="eliminarFila(this)">Borrar</button></td>
+            </tr>
+        </tbody>
+
+        </table>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+
+</html>
