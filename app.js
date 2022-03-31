@@ -11,11 +11,9 @@ var tabla = document.getElementById("tabla");
 var guardar = document.getElementById("guardar");
 var contador = 1;
 //Al hacer click al boton, ejecuta la siguiente accion
-guardar.addEventListener("click",function(){
+guardar.addEventListener("click",agregarATabla)
 
+function agregarATabla(){
     console.log("se ha dado click al boton");
-
-
-
-})
+}
 
